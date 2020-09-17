@@ -1,4 +1,4 @@
-This folder contains all the scripts you need to find SCVs in the Argo dataset
+This folder contains all the scripts you need to find SCVs in the Argo dataset.
 argo_scvs_master.m is the master script, use it to perform each step of the processing.
 
 Note that we set up these scripts using parallel processing. If you are unable to parallel process,
@@ -14,7 +14,7 @@ parfor i = 1:length(argo_lon)
 becomes 
 for i = 1:length(argo_lon)
 
-Before you begin, see open argo_scvs_master.m and view the header
+Before you begin, open argo_scvs_master.m and view the header
 
 Each file contains information at the top of the script, but a quick description of each file is given below:
 ####################################################################
