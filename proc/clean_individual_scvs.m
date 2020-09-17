@@ -81,14 +81,15 @@ for i = 1:length(good_spicy_scvs)
 	scv_data.spicy_scvs(i).raw.pres = good_spicy_scvs(i).RAW_DATA.pres;
 
 	% Profile data
-	scv_data.spicy_scvs(i).profile.temp      = good_spicy_scvs(i).temp;
-	scv_data.spicy_scvs(i).profile.cons_temp = good_spicy_scvs(i).theta;
-	scv_data.spicy_scvs(i).profile.salt      = good_spicy_scvs(i).salt;
-	scv_data.spicy_scvs(i).profile.salt_abs  = single(good_spicy_scvs(i).salt_abs);
-	scv_data.spicy_scvs(i).profile.spice     = good_spicy_scvs(i).spice;
-	scv_data.spicy_scvs(i).profile.N2        = good_spicy_scvs(i).N2;
-	scv_data.spicy_scvs(i).profile.pres      = single(good_spicy_scvs(i).pres);
-	scv_data.spicy_scvs(i).profile.sigma0    = good_spicy_scvs(i).sigma0;
+	scv_data.spicy_scvs(i).profile.temp       = good_spicy_scvs(i).temp;
+	scv_data.spicy_scvs(i).profile.cons_temp  = good_spicy_scvs(i).theta;
+	scv_data.spicy_scvs(i).profile.salt       = good_spicy_scvs(i).salt;
+	scv_data.spicy_scvs(i).profile.salt_abs   = single(good_spicy_scvs(i).salt_abs);
+	scv_data.spicy_scvs(i).profile.spice      = good_spicy_scvs(i).spice;
+	scv_data.spicy_scvs(i).profile.N2         = good_spicy_scvs(i).N2;
+	scv_data.spicy_scvs(i).profile.dyn_height = single(good_spicy_scvs(i).dyn_height);
+	scv_data.spicy_scvs(i).profile.pres       = single(good_spicy_scvs(i).pres);
+	scv_data.spicy_scvs(i).profile.sigma0     = good_spicy_scvs(i).sigma0;
 
 	% Anomaly data
 	scv_data.spicy_scvs(i).anomalies.temp            = good_spicy_scvs(i).temp_anom; 
@@ -170,14 +171,15 @@ for i = 1:length(good_minty_scvs)
 	scv_data.minty_scvs(i).raw.pres = good_minty_scvs(i).RAW_DATA.pres;
 
 	% Profile data
-	scv_data.minty_scvs(i).profile.temp      = good_minty_scvs(i).temp;
-	scv_data.minty_scvs(i).profile.cons_temp = good_minty_scvs(i).theta;
-	scv_data.minty_scvs(i).profile.salt      = good_minty_scvs(i).salt;
-	scv_data.minty_scvs(i).profile.salt_abs  = single(good_minty_scvs(i).salt_abs);
-	scv_data.minty_scvs(i).profile.spice     = good_minty_scvs(i).spice;
-	scv_data.minty_scvs(i).profile.N2        = good_minty_scvs(i).N2;
-	scv_data.minty_scvs(i).profile.pres      = single(good_minty_scvs(i).pres);
-	scv_data.minty_scvs(i).profile.sigma0    = good_minty_scvs(i).sigma0;
+	scv_data.minty_scvs(i).profile.temp       = good_minty_scvs(i).temp;
+	scv_data.minty_scvs(i).profile.cons_temp  = good_minty_scvs(i).theta;
+	scv_data.minty_scvs(i).profile.salt       = good_minty_scvs(i).salt;
+	scv_data.minty_scvs(i).profile.salt_abs   = single(good_minty_scvs(i).salt_abs);
+	scv_data.minty_scvs(i).profile.spice      = good_minty_scvs(i).spice;
+	scv_data.minty_scvs(i).profile.N2         = good_minty_scvs(i).N2;
+        scv_data.minty_scvs(i).profile.dyn_height = single(good_minty_scvs(i).dyn_height);
+	scv_data.minty_scvs(i).profile.pres       = single(good_minty_scvs(i).pres);
+	scv_data.minty_scvs(i).profile.sigma0     = good_minty_scvs(i).sigma0;
 
 	% Anomaly data
 	scv_data.minty_scvs(i).anomalies.temp  	      = good_minty_scvs(i).temp_anom; 
