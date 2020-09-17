@@ -81,12 +81,13 @@ for i = 1:length(spicy_scv)
 		scv_data.spicy_scvs(i).meta(j).time  = spicy_scv(i).time{j};
 
 		% Profile data
-		scv_data.spicy_scvs(i).profile(j).temp   = single(spicy_scv(i).temp{j});
-		scv_data.spicy_scvs(i).profile(j).salt   = single(spicy_scv(i).salt{j});
-		scv_data.spicy_scvs(i).profile(j).spice  = single(spicy_scv(i).spice{j});
-		scv_data.spicy_scvs(i).profile(j).N2     = single(spicy_scv(i).N2{j});
-		scv_data.spicy_scvs(i).profile(j).pres   = single(spicy_scv(i).pres{j});
-		scv_data.spicy_scvs(i).profile(j).sigma0 = single(spicy_scv(i).sigma0{j});
+		scv_data.spicy_scvs(i).profile(j).temp       = single(spicy_scv(i).temp{j});
+		scv_data.spicy_scvs(i).profile(j).salt       = single(spicy_scv(i).salt{j});
+		scv_data.spicy_scvs(i).profile(j).spice      = single(spicy_scv(i).spice{j});
+		scv_data.spicy_scvs(i).profile(j).N2         = single(spicy_scv(i).N2{j});
+		scv_data.spicy_scvs(i).profile(j).dyn_height = single(spicy_scv(i).dyn_height{j});
+		scv_data.spicy_scvs(i).profile(j).pres       = single(spicy_scv(i).pres{j});
+		scv_data.spicy_scvs(i).profile(j).sigma0     = single(spicy_scv(i).sigma0{j});
 
 		% Anomaly data
 		scv_data.spicy_scvs(i).anomalies(j).temp  = single(spicy_scv(i).temp_anom{j}); 
@@ -162,12 +163,13 @@ for i = 1:length(minty_scv)
 		scv_data.minty_scvs(i).meta(j).time  = minty_scv(i).time{j};
 
 		% Profile data
-		scv_data.minty_scvs(i).profile(j).temp   = single(minty_scv(i).temp{j});
-		scv_data.minty_scvs(i).profile(j).salt   = single(minty_scv(i).salt{j});
-		scv_data.minty_scvs(i).profile(j).spice  = single(minty_scv(i).spice{j});
-		scv_data.minty_scvs(i).profile(j).N2     = single(minty_scv(i).N2{j});
-		scv_data.minty_scvs(i).profile(j).pres   = single(minty_scv(i).pres{j});
-		scv_data.minty_scvs(i).profile(j).sigma0 = single(minty_scv(i).sigma0{j});
+		scv_data.minty_scvs(i).profile(j).temp       = single(minty_scv(i).temp{j});
+		scv_data.minty_scvs(i).profile(j).salt       = single(minty_scv(i).salt{j});
+		scv_data.minty_scvs(i).profile(j).spice      = single(minty_scv(i).spice{j});
+		scv_data.minty_scvs(i).profile(j).N2         = single(minty_scv(i).N2{j});
+		scv_data.minty_scvs(i).profile(j).dyn_height = single(minty_scv(i).dyn_height{j});
+		scv_data.minty_scvs(i).profile(j).pres       = single(minty_scv(i).pres{j});
+		scv_data.minty_scvs(i).profile(j).sigma0     = single(minty_scv(i).sigma0{j});
 
 		% Anomaly data
 		scv_data.minty_scvs(i).anomalies(j).temp  = single(minty_scv(i).temp_anom{j}); 
