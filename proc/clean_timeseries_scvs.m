@@ -92,11 +92,13 @@ for i = 1:length(spicy_scv)
 			scv_data.spicy_scvs(cnt).profile(j).sigma0     = single(spicy_scv(i).sigma0{j});
 
 			% Anomaly data
-			scv_data.spicy_scvs(cnt).anomalies(j).temp  = single(spicy_scv(i).temp_anom{j}); 
-			scv_data.spicy_scvs(cnt).anomalies(j).salt  = single(spicy_scv(i).salt_anom{j});
-			scv_data.spicy_scvs(cnt).anomalies(j).spice = single(spicy_scv(i).spice_anom{j});
-			scv_data.spicy_scvs(cnt).anomalies(j).N2    = single(spicy_scv(i).N2_anom{j});
-			scv_data.spicy_scvs(cnt).anomalies(j).pres  = single(spicy_scv(i).pres_anom{j});
+			scv_data.spicy_scvs(cnt).anomalies(j).temp  	      = single(spicy_scv(i).temp_anom{j}); 
+			scv_data.spicy_scvs(cnt).anomalies(j).salt  	      = single(spicy_scv(i).salt_anom{j});
+			scv_data.spicy_scvs(cnt).anomalies(j).spice 	      = single(spicy_scv(i).spice_anom{j});
+			scv_data.spicy_scvs(cnt).anomalies(j).N2    	      = single(spicy_scv(i).N2_anom{j});
+			scv_data.spicy_scvs(cnt).anomalies(j).pres            = single(spicy_scv(i).pres_anom{j});
+			scv_data.spicy_scvs(cnt).anomalies(j).dyn_height_init = single(spicy_scv(i).dyn_height_anom{j});
+			scv_data.spicy_scvs(cnt).anomalies(j).dyn_height_adj  = single(spicy_scv(i).dyn_height_anom_BC1{j});
 
 			% IQR Thresholds
 			scv_data.spicy_scvs(cnt).thresholds(j).spice.Q1  = single(spicy_scv(i).spice_limits{j}(:,1));
@@ -178,11 +180,13 @@ for i = 1:length(minty_scv)
 			scv_data.minty_scvs(cnt).profile(j).sigma0     = single(minty_scv(i).sigma0{j});
 
 			% Anomaly data
-			scv_data.minty_scvs(cnt).anomalies(j).temp  = single(minty_scv(i).temp_anom{j}); 
-			scv_data.minty_scvs(cnt).anomalies(j).salt  = single(minty_scv(i).salt_anom{j});
-			scv_data.minty_scvs(cnt).anomalies(j).spice = single(minty_scv(i).spice_anom{j});
-			scv_data.minty_scvs(cnt).anomalies(j).N2    = single(minty_scv(i).N2_anom{j});
-			scv_data.minty_scvs(cnt).anomalies(j).pres  = single(minty_scv(i).pres_anom{j});
+			scv_data.minty_scvs(cnt).anomalies(j).temp            = single(minty_scv(i).temp_anom{j}); 
+			scv_data.minty_scvs(cnt).anomalies(j).salt            = single(minty_scv(i).salt_anom{j});
+			scv_data.minty_scvs(cnt).anomalies(j).spice           = single(minty_scv(i).spice_anom{j});
+			scv_data.minty_scvs(cnt).anomalies(j).N2              = single(minty_scv(i).N2_anom{j});
+			scv_data.minty_scvs(cnt).anomalies(j).pres            = single(minty_scv(i).pres_anom{j});
+			scv_data.minty_scvs(cnt).anomalies(j).dyn_height_init = single(minty_scv(i).dyn_height_anom{j});
+			scv_data.minty_scvs(cnt).anomalies(j).dyn_height_adj  = single(minty_scv(i).dyn_height_anom_BC1{j});
 
 			% IQR Thresholds
 			scv_data.minty_scvs(cnt).thresholds(j).spice.Q1  = single(minty_scv(i).spice_limits{j}(:,1));
